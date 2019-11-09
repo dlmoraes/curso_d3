@@ -11,3 +11,8 @@
     width: 25px;
     margin-right: 5px;
 }
+
+rect:hover {
+    fill: #0C9CDF;
+    transition: 0.5s all ease-in;
+}

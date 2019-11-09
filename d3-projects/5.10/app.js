@@ -3,6 +3,7 @@ var data            =   [6,20,21,14,2,30,7,16,25,5,11,28,10,26,9];
 // Create SVG Element
 var chart_width     =   800;
 var chart_height    =   400;
+var sort_flag        =   false;
 var svg             =   d3.select( '#chart' )
     .append( 'svg' )
     .attr( 'width', chart_width )
@@ -35,16 +36,43 @@ svg.selectAll( 'rect' )
         return y_scale( d );
     })
     .attr( 'fill', '#7ED26D' )
-    .on('mouseover', function (d, i) {
-        d3.select(this)
-            .transition()
-            .attr('fill', '#0c9cdf')
+    // Solução 1 - Nomeando transições
+    // Solução 2 - Adicionar efeito no arquivo css ou pela tag style
+    // .on('mouseover', function (d, i) {
+    //     d3.select(this)
+    //         .transition()
+    //         .attr('fill', '#0c9cdf')
+    //     ;
+    // })
+    // .on('mouseout', function (d, i) {
+    //     d3.select(this)
+    //         .transition('change_color_back')
+    //         .attr('fill', '#7ed26d')
+    // })
+    .on('click', function () {
+        svg.selectAll('rect')
+            .sort(function (a, b) {
+                return sort_flag ? d3.descending(a,b) : d3.ascending(a,b);
+            })
+            .transition('sort')
+            .duration(1000)
+            .attr('x', function (d, i) {
+                return x_scale(i);
+            })
         ;
-    })
-    .on('mouseout', function (d, i) {
-        d3.select(this)
+
+        svg.selectAll('text')
+            .sort(function (a, b) {
+                return sort_flag ? d3.descending(a,b) : d3.ascending(a,b);
+            })
             .transition()
-            .attr('fill', '#7ed26d')
+            .duration(1000)
+            .attr( 'x', function( d, i ){
+                return x_scale( i ) + x_scale.bandwidth() / 2;
+            })
+        ;
+
+        sort_flag = !sort_flag;
     })
 ;
 
