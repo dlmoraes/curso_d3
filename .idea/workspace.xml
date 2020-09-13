@@ -21,9 +21,6 @@
   <component name="ChangeListManager">
     <list default="true" id="09ad7787-015e-4814-9037-bc2d4618f936" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/d3-projects/7.5/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/d3-projects/7.5/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/d3-projects/7.5/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/d3-projects/7.5/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/d3-projects/7.5/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/d3-projects/7.5/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,12 +42,23 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/d3-projects" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\projetos\charts\curso_d3\d3-projects" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/curso_d3/d3-projects/7.6/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.index.html" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -62,7 +70,7 @@
       <updated>1600010359533</updated>
       <workItem from="1600010361526" duration="225000" />
       <workItem from="1600011347216" duration="1267000" />
-      <workItem from="1600020173066" duration="360000" />
+      <workItem from="1600020173066" duration="1444000" />
     </task>
     <servers />
   </component>
